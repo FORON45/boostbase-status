@@ -27,7 +27,7 @@ jobs:
 
       - name: Save the state when it changed
         run: |
-          git diff --quiet -- state.json && exit 0
+          [ -z "$(git status --porcelain -- state.json)" ] && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add state.json
