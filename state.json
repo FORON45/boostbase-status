@@ -1,0 +1,31 @@
+{
+  "summary": "all up",
+  "month": "2026-11",
+  "sites": {
+    "Home": {
+      "up": true,
+      "why": "",
+      "since": "2026-11-05T19:04:52.183Z"
+    },
+    "Rust": {
+      "up": true,
+      "why": "",
+      "since": "2026-11-05T19:04:52.183Z"
+    },
+    "ARC Raiders": {
+      "up": true,
+      "why": "",
+      "since": "2026-11-05T19:04:52.183Z"
+    },
+    "Checkout": {
+      "up": true,
+      "why": "",
+      "since": "2026-11-05T19:04:52.183Z"
+    },
+    "Database": {
+      "up": true,
+      "why": "",
+      "since": "2026-11-05T19:04:52.183Z"
+    }
+  }
+}
