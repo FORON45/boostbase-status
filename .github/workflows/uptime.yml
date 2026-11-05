@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+    inputs:
+      test:
+        description: Send a test message to Telegram
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -23,6 +28,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEND_TEST: ${{ inputs.test }}
         run: node check.js
 
       - name: Save the state when it changed
