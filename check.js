@@ -48,6 +48,7 @@ async function telegram(text) {
     if (!r.up) alerts.push(`🔴 ${c.name} is down: ${r.why}\n${c.url}`);
     else if (was.up === false) alerts.push(`🟢 ${c.name} is back up after ${Math.round((Date.now() - Date.parse(was.since)) / 60000)} min`);
   }
+  if (process.env.SEND_TEST === 'true') alerts.push('✅ BoostBase uptime alerts are connected');
   if (alerts.length) await telegram(alerts.join('\n\n'));
   const down = Object.entries(sites).filter(([, s]) => !s.up).map(([n]) => n);
   const summary = down.length ? 'down: ' + down.join(', ') : 'all up';
