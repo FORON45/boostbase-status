@@ -1,0 +1,7 @@
+[
+  { "name": "Home", "url": "https://www.boostbasegg.com/", "expect": "BoostBase" },
+  { "name": "Rust", "url": "https://www.boostbasegg.com/rust", "expect": "Rust" },
+  { "name": "ARC Raiders", "url": "https://www.boostbasegg.com/arc-raiders", "expect": "ARC" },
+  { "name": "Checkout", "url": "https://www.boostbasegg.com/cart", "expect": "" },
+  { "name": "Database", "url": "https://ursvzfknekyugzouqwwz.supabase.co/auth/v1/health", "status": [200, 401] }
+]
